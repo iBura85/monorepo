@@ -1,0 +1,12 @@
+{
+  "name": "monorepo",
+  "workspaces": {
+    "packages": [
+      "libs/*",
+      "apps/*"
+    ]
+  },
+  "scripts": {
+    "start:dev": "yarn workspaces foreach -pi run start:dev"
+  }
+}
